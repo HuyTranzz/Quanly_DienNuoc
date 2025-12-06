@@ -41,15 +41,14 @@ Hệ thống sử dụng giao thức MQTT để truyền dữ liệu nhanh, ổn
 | ESP32 DevKit V1 | 1        | Main controller          |
 | LED bất kỳ      | 2        | LED mô phỏng điện + nước |
 | Điện trở 220Ω   | 2        | Hạn dòng cho LED         |
-| Dây cắm         | Nhiều    | Kết nối Board → LED      |
 
 ### Sơ đồ nối dây (ESP32 → LED)
 
-| ESP32 Pin | Thiết bị                      |
-| --------- | ----------------------------- |
-| GPIO 4    | LED điện chân dương           |
-| GPIO 19   | LED nước chân dương           |
-| GND       | Chân âm LED nối chung         |
+| ESP32 Pin | Thiết bị                        |
+| --------- | --------------------------------|
+| GPIO 4    | LED điện chân dương qua trở 220Ω|
+| GPIO 19   | LED nước chân dương qua trở 220Ω|
+| GND       | Chân âm LED nối chung           |
 
 Bạn có thể thay đổi chân trong code tùy nhu cầu.
 
