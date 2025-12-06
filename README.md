@@ -120,8 +120,8 @@ https://www.hivemq.com/demos/websocket-client/
 
 ### Bước 1 — Clone dự án
 ```
-git clone https://github.com/your-username/ten-du-an.git
-cd ten-du-an
+git clone https://github.com/HuyTranzz/Quanly_DienNuoc.git
+cd Quanly_DienNuoc
 ```
 
 ### Bước 2 — Cài các gói Flutter
