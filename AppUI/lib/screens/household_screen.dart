@@ -29,7 +29,7 @@ class _HouseholdDetailScreenState extends State<HouseholdDetailScreen> {
   @override
   void initState() {
     super.initState();
-    _connectMQTT();
+    _connectMQTT(); //Gọi _connectMQTT() để kết nối MQTT.
   }
 
   void _connectMQTT() async {
@@ -54,7 +54,7 @@ class _HouseholdDetailScreenState extends State<HouseholdDetailScreen> {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
-    
+    //Giao diện tổng thể (Scaffold)
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -146,7 +146,7 @@ class _HouseholdDetailScreenState extends State<HouseholdDetailScreen> {
             ),
             SizedBox(height: screenHeight * 0.015),
             
-            // Cảm biến - sử dụng Wrap thay vì Row
+            // Cảm biến - sử dụng Wrap thay vì Row Wrap → khi màn hình nhỏ, 2 thẻ sẽ tự xuống dòng.
             Padding(
               padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.02),
               child: Wrap(

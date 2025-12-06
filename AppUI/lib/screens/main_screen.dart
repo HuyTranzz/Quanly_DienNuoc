@@ -1,4 +1,3 @@
-// file khu_pho_screen.dart
 import 'package:flutter/material.dart';
 import 'household_screen.dart';
 import 'settings_screen.dart';
@@ -59,7 +58,7 @@ class _KhuPhoScreenState extends State<KhuPhoScreen> {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
-    
+    //thiết kế giao diện chính
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -309,9 +308,9 @@ class _KhuPhoScreenState extends State<KhuPhoScreen> {
                       ),
                       itemCount: _getHouseholdCount(),
                       itemBuilder: (context, index) {
-                        bool isActiveHousehold = (selectedKhuPho == 1 && index == 0);
-                        
-                        return HouseholdCard(
+                        bool isActiveHousehold = (selectedKhuPho == 1 && index == 0); //➡️ Chỉ cho phép hộ 1 của khu phố 1 hoạt động
+                        //Chi tiết widget HouseholdCard
+                        return HouseholdCard(  
                           khuPhoId: selectedKhuPho,
                           householdNumber: index + 1,
                           dienValue: isActiveHousehold ? dienValue : '0.0',
@@ -321,11 +320,11 @@ class _KhuPhoScreenState extends State<KhuPhoScreen> {
                           connected: connected,
                           isActive: isActiveHousehold,
                           onTap: () {
-                            if (isActiveHousehold) {
-                              Navigator.push(
+                            if (isActiveHousehold) {  //chỉ cho phép truy cập nếu hộ gia đình đã kích hoạt
+                              Navigator.push( //Xử lý bấm vào HouseholdCard
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => HouseholdDetailScreen(
+                                  builder: (context) => HouseholdDetailScreen( //chuyển đến màn hình chi tiết
                                     khuPhoId: selectedKhuPho,
                                     householdNumber: index + 1,
                                   ),
@@ -358,6 +357,7 @@ class _KhuPhoScreenState extends State<KhuPhoScreen> {
   }
 }
 
+//Thiết kế houseshold card
 class HouseholdCard extends StatelessWidget {
   final int khuPhoId;
   final int householdNumber;

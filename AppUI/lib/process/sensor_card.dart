@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+//SensorCard là một widget hiển thị cảm biến dạng thẻ
 class SensorCard extends StatelessWidget {
   final List<Color> colors;
   final List<double>? stops;

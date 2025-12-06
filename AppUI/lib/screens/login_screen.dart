@@ -19,7 +19,7 @@ class _LoginScreenState extends State<LoginScreen> {
   // Tài khoản mẫu (có thể thay đổi)
   final String _validUsername = 'admin';
   final String _validPassword = '123456';
-
+  //xử lý đăng nhập
   void _login() {
     if (_formKey.currentState!.validate()) {
       setState(() => _isLoading = true);

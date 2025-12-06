@@ -1,7 +1,7 @@
 // file main.dart
 import 'package:flutter/material.dart';
 import '../screens/login_screen.dart';
-
+//Đây là điểm khởi chạy của toàn bộ ứng dụng Flutter
 Future<void> main() async {
   runApp(const MyApp());
 }

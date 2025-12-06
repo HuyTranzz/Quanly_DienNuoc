@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../services/mqtt_service.dart';
-
+//DienCard là một widget điều khiển bật/tắt điện
 class DienCard extends StatelessWidget {
   final bool dienState;
   final bool connected;
@@ -22,7 +22,7 @@ class DienCard extends StatelessWidget {
       width: screenWidth * 0.42, // Chiếm ~42% màn hình
       margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 16),
-      decoration: BoxDecoration(
+      decoration: BoxDecoration( //thiết kế hộp hình vuông
         gradient: LinearGradient(
           colors: dienState
               ? [Colors.amber, Colors.orange, Colors.deepOrange]
@@ -38,7 +38,7 @@ class DienCard extends StatelessWidget {
           ),
         ],
       ),
-      child: Column(
+      child: Column( //nội dung trong thẻ
         mainAxisSize: MainAxisSize.min,
         children: [
           Icon(
@@ -64,10 +64,10 @@ class DienCard extends StatelessWidget {
               onChanged: connected
                   ? (value) {
                       onChanged(value);
-                      publishDienControl(value);
+                      publishDienControl(value); // gỬI LỆNH ĐẾN MQTT KHI THAY ĐỔI TRẠNG THÁI SWITCH
                     }
                   : null,
-              activeColor: Colors.white,
+              activeColor: Colors.white,//màu sắc cho switch
               activeTrackColor: Colors.yellow,
               inactiveThumbColor: Colors.white,
               inactiveTrackColor: Colors.grey.shade600,
