@@ -47,10 +47,10 @@ Hệ thống sử dụng giao thức MQTT để truyền dữ liệu nhanh, ổn
 
 | ESP32 Pin | Thiết bị                      |
 | --------- | ----------------------------- |
-| GPIO 4    | LED điện                      |
-| GPIO 19   | LED nước                      |
-| 3.3V      | Chân dương LED (qua trở 220Ω) |
-| GND       | Chân âm LED                   |
+| GPIO 4    | LED điện chân dương           |
+| GPIO 19   | LED nước chân dương           |
+| GND       | Chân âm LED nối chung         |
+
 Bạn có thể thay đổi chân trong code tùy nhu cầu.
 
 ---
