@@ -181,3 +181,13 @@ Truy cập: https://www.hivemq.com/demos/websocket-client/
       └── mqtt_service.dart
 ```
 
+---
+
+## 📸 9. Giao diện AppUI
+<p align="center">
+  <img src="https://github.com/HuyTranzz/Quanly_DienNuoc/blob/master/img/householdsreen.jpg" alt="Household" width="200"/>
+  <img src="https://github.com/HuyTranzz/Quanly_DienNuoc/blob/master/img/login.jpg" alt="login" width="200"/>
+  <img src="https://github.com/HuyTranzz/Quanly_DienNuoc/blob/master/img/mainscreen.jpg" alt="main" width="200"/>
+  <img src="https://github.com/HuyTranzz/Quanly_DienNuoc/blob/master/img/settingscreen.jpg" alt="setting" width="200"/>
+</p>
+
